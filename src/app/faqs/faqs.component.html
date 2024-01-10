@@ -1,0 +1,18 @@
+<div class="container mb-5">
+    <div class="row m-8">
+      <div class="col-lg-8 offset-lg-2">
+        <div class="faqs">
+          <h2 class="text-center">Preguntas Frecuentes</h2>
+          <ul class="list-group grid gap-0 row-gap-3">
+            <li *ngFor="let faq of faqs" class="list-group-item">
+              
+              <button (click)="faq.expandido = !faq.expandido" class="btn  ">{{ faq.pregunta }}</button>
+              <div class="row margin-top" *ngIf="faq.expandido">
+                {{ faq.respuesta }}
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>

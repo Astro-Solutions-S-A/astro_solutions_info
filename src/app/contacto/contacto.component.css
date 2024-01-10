@@ -1,0 +1,60 @@
+.contacto {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff; /* Color neutro para el fondo */
+}
+
+h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #0A2635; /* Color principal para el título */
+}
+
+.campo {
+  margin-bottom: 2rem;
+  padding: 0.5rem; 
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #0A2635; /* Color principal para las etiquetas */
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #D9B310; /* Color de acento para el borde */
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #0A2635; /* Color principal para el texto */
+  background-color: #f4f4f4; /* Un color suave para el fondo del input/textarea */
+}
+
+input:focus, textarea:focus {
+  border-color: #0A2635; /* Color principal para el borde al hacer focus */
+  outline: none;
+}
+
+button {
+  display: block;
+  width: calc(100% - 1rem);
+  padding: 0.5rem;
+  background-color: #D9B310; /* Color de acento para el botón */
+  color: #0A2635; /* Color principal para el texto del botón */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #0A2635; /* Color principal al pasar el mouse */
+  color: #fff; /* Color neutro para el texto al pasar el mouse */
+  transform: translateY(-3px); /* Un pequeño levantamiento al pasar el mouse */
+}

@@ -1,0 +1,16 @@
+.portafolio {
+    padding: 20px;
+  }
+  
+  .portafolio h2 {
+    font-size: 24px;
+  }
+  
+  .proyecto {
+    margin: 20px 0;
+  }
+  
+  .proyecto img {
+    max-width: 100%;
+  }
+  

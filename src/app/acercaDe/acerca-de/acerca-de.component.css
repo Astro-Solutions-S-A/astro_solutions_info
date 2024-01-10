@@ -1,0 +1,76 @@
+.acerca-de {
+  padding: 80px 0;
+  background-color: #f4f4f4; /* Ligeramente más oscuro que el original para que contraste mejor con el color neutro */
+  text-align: center;
+  position: relative;
+}
+
+.acerca-de h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #0A2635; /* Color principal */
+}
+
+.acerca-de-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+.acerca-de-texto p {
+  font-size: 1.3em;
+  margin-bottom: 30px;
+  color: #333; /* Un color oscuro pero no tan pronunciado como el principal */
+}
+
+.acerca-de-texto p strong {
+  color: #D9B310; /* Usamos el color de acento para destacar el texto en negrita */
+}
+
+.btn-more {
+  padding: 12px 24px;
+  background-color: #0A2635; /* Color principal */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-more:hover {
+  background-color: #D9B310; /* Al pasar el mouse, cambiamos a color de acento */
+  color: #0A2635; /* Color principal para el texto al pasar el mouse */
+  transform: translateY(-5px);
+}
+
+.acerca-de-imagen img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.acerca-de-imagen:hover img {
+  transform: scale(1.05);
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(40px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.acerca-de-content {
+  opacity: 0;
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s;
+}
