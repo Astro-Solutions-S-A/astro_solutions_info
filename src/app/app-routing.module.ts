@@ -11,6 +11,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { FaqsComponent } from './faqs/faqs.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/inicio', pathMatch: 'full' },
   { path: 'inicio', component: InicioComponent },
   { path: 'servicios', component: ServiciosComponent },
   { path: 'acerca-de', component: AcercaDeComponent },
