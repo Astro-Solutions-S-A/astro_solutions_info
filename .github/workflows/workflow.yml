@@ -17,7 +17,7 @@ jobs:
 
             - name: Install and build
               working-directory: . 
-              run: npm Install && npm run build && cp dist/astro_pagina_info/index.html dist/astro_pagina_info/404.html
+              run: npm install && npm run build && cp dist/astro_pagina_info/index.html dist/astro_pagina_info/404.html
             - name: Deploy
               uses: JamesIves/github-pages-deploy-action@4.1.1
               with:
