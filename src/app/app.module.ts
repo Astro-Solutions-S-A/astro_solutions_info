@@ -25,6 +25,7 @@ import { FaqsComponent } from './faqs/faqs.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { FooterComponent } from './footer/footer.component';
 import { GaleriaComponent } from './galeria/galeria.component';
+import { CardReversibleComponent } from './card-reversible/card-reversible.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { GaleriaComponent } from './galeria/galeria.component';
     FaqsComponent,
       InicioComponent,
       FooterComponent,
-      GaleriaComponent
+      GaleriaComponent,
+      CardReversibleComponent
   ],
   imports: [
     BrowserModule,
