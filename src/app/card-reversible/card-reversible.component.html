@@ -3,27 +3,19 @@
       <div class="back">
         <div class="back-content">
           <img class="image" [src]="imageUrl" alt="{{ title }}" />
-          <strong>{{ title }}</strong>
+          <h3 class="back-content__title">{{ title }}</h3>
         </div>
       </div>
       <div class="front">
-        <div class="img">
-          <div class="circle"></div>
-          <div class="circle" id="right"></div>
-          <div class="circle" id="bottom"></div>
-        </div>
+       
         <div class="front-content">
-          <small class="badge">{{ badge }}</small>
+          
           <div class="description">
             <div class="title">
-              <p class="title">
-                <strong>{{ title }}</strong>
-              </p>
-              <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xmlns="http://www.w3.org/2000/svg">
-                <!-- SVG code -->
-              </svg>
+              <h3 class="title">
+                {{ title }}
+              </h3>
+             
             </div>
             <p class="card-footer">{{ description }}</p>
           </div>

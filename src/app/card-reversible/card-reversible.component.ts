@@ -7,7 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class CardReversibleComponent {
   @Input() title: string = '';
-  @Input() badge: string = '';
   @Input() description: string = '';
   @Input() imageUrl: string = '';
 }
