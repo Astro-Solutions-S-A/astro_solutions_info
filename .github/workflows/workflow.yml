@@ -13,7 +13,7 @@ jobs:
                 node-version: [18.x]
         steps:
             - name: Checkout
-              uses: actions/checkout@v2
+              uses: actions/checkout@v3
 
             - name: Install and build
               working-directory: . 
@@ -23,4 +23,4 @@ jobs:
               with:
                   branch: gh-pages
                   folder: dist/astro_pagina_info
-                  ssh-key: ${{ secrets.DEPLOY_KEY }}
+                  token: ${{ secrets.DEPLOY_TOKEN }}
