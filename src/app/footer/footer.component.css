@@ -1,0 +1,60 @@
+footer {
+    background-color: #0A2635; /* Color de fondo similar al navbar */
+    color: #ffffff; /* Texto en color claro para contraste */
+    padding: 1rem 0;
+  }
+  
+  footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  footer img {
+    max-width: 100px; /* Ajusta el tamaño del logo */
+    margin-bottom: 1rem;
+  }
+  
+  footer h5 {
+    color: #D9B310; /* Color de los títulos similar al navbar */
+    margin-bottom: 0.5rem;
+  }
+  
+  footer p, footer a {
+    color: #ffffff; /* Texto y enlaces en blanco para contraste */
+    margin-bottom: 0.5rem;
+  }
+  
+  footer a {
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  footer a:hover {
+    color: #D9B310; /* Cambio de color al pasar el ratón */
+  }
+  
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-row {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-row > div {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* Estilo para el texto de derechos de autor */
+  footer .center {
+    text-align: center;
+    margin-top: 1rem;
+    border-top: 1px solid #324a5f;
+    padding-top: 1rem;
+  }
+  

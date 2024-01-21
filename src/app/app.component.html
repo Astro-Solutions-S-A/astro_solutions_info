@@ -1,3 +1,23 @@
 <app-navbar></app-navbar>
+
+<!-- Secciones para navegación de anclaje -->
+<div *ngIf="mostrarSeccionesAnclaje">
+  <div id="servicios">
+      <app-servicios></app-servicios>
+  </div>
+  <div id="acerca-de">
+      <app-acerca-de></app-acerca-de>
+  </div>
+  <div id="contacto">
+      <app-contacto></app-contacto>
+  </div>
+</div>
 <router-outlet></router-outlet>
+
+<div class="scroll-to-top" *ngIf="mostrarBotonIrArriba">
+    <button (click)="scrollToTop()">Ir Arriba</button>
+  </div>
+  
+
+
 <app-footer></app-footer>

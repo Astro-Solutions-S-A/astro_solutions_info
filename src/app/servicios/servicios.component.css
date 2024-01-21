@@ -1,19 +1,17 @@
-.servicios h2 {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 30px;
-  color: #0A2635; /* Color principal */
-}
-
 .servicios {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
   flex-wrap: wrap;
   gap: 20px;
   background-color: #f4f4f4; /* Un color de fondo claro para contrastar con el color principal */
   padding: 20px;
   border-radius: 8px;
+}
+.servicios h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0A2635; /* Color principal */
 }
 
 .servicio-item {
@@ -24,27 +22,28 @@
   padding: 20px;
   border-radius: 8px;
   transition: box-shadow 0.3s, transform 0.3s;
-  width: calc(25% - 20px);
-  background-color: #ffffff; /* Color neutro */
-  border: 1px solid #D9B310; /* Bordes con el color de acento */
+  width: calc(33.333% - 20px);
+  background-color: #ffffff;
+  border: 1px solid #D9B310;
 }
 
 .servicio-item:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   transform: scale(1.05);
-  border: 1px solid #0A2635; /* Al pasar el mouse, el borde se cambia al color principal */
+  border: 1px solid #0A2635;
 }
+
 
 .servicio-item img {
   width: 150px;
   height: 150px;
   object-fit: cover;
   margin-bottom: 20px;
-  border-radius: 8px; /* Redondea las esquinas de la imagen */
+  border-radius: 8px; 
 }
 
 .servicio-item h3 {
   margin-top: 10px;
   font-size: 1.2em;
-  color: #0A2635; /* Color principal para los títulos de cada servicio */
+  color: #0A2635; 
 }
