@@ -136,8 +136,8 @@
   
   .image {
     position: absolute;
-    width: 60%;
-    height: 60%;
+    width: 90%;
+    height: 90%;
     object-fit: cover;
     object-position: center;
     border-radius: 5px;
