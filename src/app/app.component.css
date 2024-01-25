@@ -2,3 +2,23 @@ html {
     scroll-behavior: smooth;
 }
 
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+  }
+  
+  .scroll-to-top button {
+    padding: 10px 15px;
+    background-color: #0A2635;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .scroll-to-top button:hover {
+    background-color: #D9B310;
+  }
+  

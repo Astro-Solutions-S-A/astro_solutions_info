@@ -1,18 +1,112 @@
+<div class="faqs">
 <div class="container mb-5">
-    <div class="row m-8">
-      <div class="col-lg-8 offset-lg-2">
-        <div class="faqs">
-          <h2 class="text-center">Preguntas Frecuentes</h2>
-          <ul class="list-group grid gap-0 row-gap-3">
-            <li *ngFor="let faq of faqs" class="list-group-item">
-              
-              <button (click)="faq.expandido = !faq.expandido" class="btn  ">{{ faq.pregunta }}</button>
-              <div class="row margin-top" *ngIf="faq.expandido">
-                {{ faq.respuesta }}
-              </div>
-            </li>
-          </ul>
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2">
+      
+        <h2 class="text-center mb-4">Preguntas Frecuentes</h2>
+        <div class="accordion">
+          <!-- Itera sobre cada FAQ -->
+          <!-- FAQ 1 -->
+          <div class="accordion-item">
+            <button class="accordion-header bg-body-tertiary" bg-dark data-bs-theme="dark" (click)="toggleFaq(1)">
+              ¿Cuáles son los servicios informáticos que ofrecen?
+              <span class="icon" [ngClass]="{'rotated': expandido === 1}">&#x25BC;</span>
+            </button>
+            <div class="accordion-body" *ngIf="expandido === 1">
+              Ofrecemos servicios de desarrollo de software, consultoría en tecnología, soporte técnico y más. Puede obtener más información en nuestra página de servicios.
+            </div>
+          </div>
+          <!-- Repite para cada FAQ adicional -->
+          <!-- FAQ 2 -->
+          <div class="accordion-item">
+            <button class="accordion-header bg-body-tertiary" bg-dark data-bs-theme="dark" (click)="toggleFaq(2)">
+              ¿Cuál es el costo de sus servicios?
+              <span class="icon" [ngClass]="{'rotated': expandido === 2}">&#x25BC;</span>
+            </button>
+            <div class="accordion-body" *ngIf="expandido === 2">
+              El costo de nuestros servicios puede variar según el proyecto o la necesidad específica del cliente. Le recomendamos ponerse en contacto con nosotros para obtener un presupuesto personalizado.
+            </div>
+          </div>
+          <!-- Repite para cada FAQ adicional -->
+          <!-- FAQ 3 -->
+          <div class="accordion-item">
+            <button class="accordion-header bg-body-tertiary" bg-dark data-bs-theme="dark" (click)="toggleFaq(3)">
+              ¿Cuál es el tiempo de entrega de los proyectos?
+              <span class="icon" [ngClass]="{'rotated': expandido === 3}">&#x25BC;</span>
+            </button>
+            <div class="accordion-body" *ngIf="expandido === 3">
+              El tiempo de entrega de proyectos puede variar según la complejidad y el alcance del proyecto. Trabajaremos estrechamente con usted para establecer plazos realistas.
+            </div>
+          </div>
+          <!-- Repite para cada FAQ adicional -->
+          <!-- FAQ 4 -->
+          <div class="accordion-item">
+            <button class="accordion-header bg-body-tertiary" bg-dark data-bs-theme="dark" (click)="toggleFaq(4)">
+              ¿Cómo puedo contactarlos para obtener más información?
+              <span class="icon" [ngClass]="{'rotated': expandido === 4}">&#x25BC;</span>
+            </button>
+            <div class="accordion-body" *ngIf="expandido === 4">
+              Puede ponerse en contacto con nosotros a través del formulario de contacto en nuestro sitio web o llamarnos directamente al número de teléfono proporcionado en la sección de contacto.
+            </div>
+          </div>
+          <!-- Repite para cada FAQ adicional -->
+          <!-- FAQ 5 -->
+          <div class="accordion-item">
+            <button class="accordion-header bg-body-tertiary" bg-dark data-bs-theme="dark" (click)="toggleFaq(5)">
+              ¿Cuál es la misión de su empresa en el campo de la tecnología?
+              <span class="icon" [ngClass]="{'rotated': expandido === 5}">&#x25BC;</span>
+            </button>
+            <div class="accordion-body" *ngIf="expandido === 5">
+              Desde nuestro inicio, hemos tenido una única misión: transformar ideas en soluciones tecnológicas impactantes. Con una combinación de creatividad y técnica, nuestro equipo de profesionales apasionados se dedica a ofrecer productos de vanguardia que superan las expectativas.
+            </div>
+          </div>
+          <!-- Repite para cada FAQ adicional -->
+          <!-- FAQ 6 -->
+          <div class="accordion-item">
+            <button class="accordion-header bg-body-tertiary" bg-dark data-bs-theme="dark" (click)="toggleFaq(6)">
+              ¿Qué servicios de desarrollo de aplicaciones personalizadas ofrecen?
+              <span class="icon" [ngClass]="{'rotated': expandido === 6}">&#x25BC;</span>
+            </button>
+            <div class="accordion-body" *ngIf="expandido === 6">
+              Ofrecemos servicios de desarrollo de aplicaciones personalizadas diseñadas a medida para satisfacer las necesidades específicas de nuestros clientes.
+            </div>
+          </div>
+          <!-- Repite para cada FAQ adicional -->
+          <!-- FAQ 7 -->
+          <div class="accordion-item">
+            <button class="accordion-header bg-body-tertiary" bg-dark data-bs-theme="dark" (click)="toggleFaq(7)">
+              ¿Pueden proporcionar detalles sobre el mantenimiento de sistemas informáticos que ofrecen?
+              <span class="icon" [ngClass]="{'rotated': expandido === 7}">&#x25BC;</span>
+            </button>
+            <div class="accordion-body" *ngIf="expandido === 7">
+              Nuestro equipo brinda servicios de mantenimiento de sistemas informáticos para garantizar que sus sistemas funcionen de manera óptima y estén actualizados. Esto incluye correcciones de errores, actualizaciones de software y soporte técnico continuo.
+            </div>
+          </div>
+          <!-- Repite para cada FAQ adicional -->
+          <!-- FAQ 8 -->
+          <div class="accordion-item">
+            <button class="accordion-header bg-body-tertiary" bg-dark data-bs-theme="dark" (click)="toggleFaq(8)">
+              ¿Qué tipo de asesorías tecnológicas proporcionan?
+              <span class="icon" [ngClass]="{'rotated': expandido === 8}">&#x25BC;</span>
+            </button>
+            <div class="accordion-body" *ngIf="expandido === 8">
+              Ofrecemos servicios de asesoría tecnológica para ayudar a nuestros clientes a tomar decisiones informadas sobre tecnología. Esto puede incluir recomendaciones sobre soluciones de software, estrategias de implementación y consultoría en tecnología.
+            </div>
+          </div>
+          <!-- Repite para cada FAQ adicional -->
+          <!-- FAQ 9 -->
+          <div class="accordion-item">
+            <button class="accordion-header bg-body-tertiary" bg-dark data-bs-theme="dark" (click)="toggleFaq(9)">
+              ¿Proporcionan servicios de hosting o alojamiento web?
+              <span class="icon" [ngClass]="{'rotated': expandido === 9}">&#x25BC;</span>
+            </button>
+            <div class="accordion-body" *ngIf="expandido === 9">
+              Sí, ofrecemos servicios de hosting o alojamiento web para alojar sitios web y aplicaciones. Nuestros servicios de hosting son confiables y seguros.
+            </div>
+          </div>
+          <!-- Repite para cada FAQ adicional -->
         </div>
       </div>
     </div>
   </div>
+</div>
