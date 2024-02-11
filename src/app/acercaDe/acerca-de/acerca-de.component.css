@@ -3,6 +3,8 @@
   background-color: #f4f4f4; /* Ligeramente más oscuro que el original para que contraste mejor con el color neutro */
   text-align: center;
   position: relative;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 .acerca-de h2 {
@@ -13,7 +15,8 @@
 
 .acerca-de-content {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
@@ -37,6 +40,13 @@
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s, transform 0.3s;
+  margin-top: 15px; /* Adjust the margin as needed */
+  padding: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .btn-more:hover {
@@ -73,4 +83,33 @@
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-delay: 0.3s;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.acerca-de-texto {
+  flex: 1;
+  max-width: 600px;
+  margin-right: 20px; /* Adjust the margin as needed */
+  text-align: justify;
+}
+
+.acerca-de-imagen {
+  flex: 1;
+  max-width: 600px;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+@media only screen and (max-width: 768px) {
+  .acerca-de-content {
+    flex-direction: column;
+  }
+  .acerca-de-texto,
+  .acerca-de-imagen {
+    margin-right: 0;
+    margin-top: 0;
+    max-width: 100%;
+  }
 }
