@@ -1,66 +1,117 @@
+.contacto-container {
+  display: flex;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.mensaje-container,
+.formulario-container {
+  flex: 1;
+  max-width: 100%; /* Adjusted to full width for responsiveness */
+}
+
+.mensaje-container {
+  padding: 2rem;
+  text-align: center;
+  background-color: #ffffff;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario-container {
+  padding: 2rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem; /* Adjusted spacing between the two columns */
+}
+
+.mensaje-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.mensaje-container p {
+  font-size: 1.2rem;
+}
+
 .contacto {
   width: 100%;
   padding: 2rem;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  background-color: #f4f4f4;
+  background-color: #ffffff;
+  border-radius: 10px;
 }
 
 h2 {
   margin-bottom: 2rem;
   text-align: center;
-  color: #0A2635; /* Color principal para el título */
+  color: #0A2635;
 }
 
-.formulario-contenedor {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 2rem;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  background-color: #ffffff;
-  border-radius: 8px; 
-}
 .campo {
-  margin-bottom: 2rem;
-  padding: 0.5rem; 
+  margin-bottom: 1.5rem; /* Adjusted spacing between fields */
+  padding: 0.5rem;
+  box-sizing: border-box;
 }
 
 label {
   display: block;
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
-  color: #0A2635; /* Color principal para las etiquetas */
+  color: #0A2635;
 }
 
-input, textarea {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #D9B310; /* Color de acento para el borde */
+input, textarea, button {
+  width: 100%; /* Adjusted width for better responsiveness */
+  padding: 8px;
+  border: 1px solid #D9B310;
   border-radius: 4px;
   box-sizing: border-box;
-  color: #0A2635; /* Color principal para el texto */
-  background-color: #f4f4f4; /* Un color suave para el fondo del input/textarea */
+  color: #0A2635;
+  background-color: #f4f4f4;
+}
+
+button {
+  cursor: pointer;
 }
 
 input:focus, textarea:focus {
-  border-color: #0A2635; /* Color principal para el borde al hacer focus */
+  border-color: #0A2635;
   outline: none;
 }
 
 button {
   display: block;
-  width: calc(100% - 1rem);
   padding: 0.5rem;
-  background-color: #D9B310; /* Color de acento para el botón */
-  color: #0A2635; /* Color principal para el texto del botón */
+  background-color: #D9B310;
+  color: #0A2635;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
   box-sizing: border-box;
+  margin-top: 0.5rem;
 }
 
 button:hover {
-  background-color: #0A2635; /* Color principal al pasar el mouse */
-  color: #fff; /* Color neutro para el texto al pasar el mouse */
-  transform: translateY(-3px); /* Un pequeño levantamiento al pasar el mouse */
+  background-color: #0A2635;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (max-width: 768px) {
+  .contacto-container {
+    flex-direction: column;
+  }
+
+  .formulario-container {
+    margin-top: 0; /* Remove the top margin for better alignment on smaller screens */
+  }
 }
