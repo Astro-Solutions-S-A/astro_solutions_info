@@ -19,6 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {  HttpClientModule } from '@angular/common/http';
 import { FaqsComponent } from './faqs/faqs.component';
 import { FooterComponent } from './footer/footer.component';
+import { CardReversibleComponent } from './card-reversible/card-reversible.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { FooterComponent } from './footer/footer.component';
     ContactoComponent,
     FaqsComponent,
     FooterComponent,
+    CardReversibleComponent
   ],
   imports: [
     BrowserModule,
