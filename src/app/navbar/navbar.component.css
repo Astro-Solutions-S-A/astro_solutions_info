@@ -1,9 +1,9 @@
 .navbar {
   background-color: #0A2635;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 12000;
+
+
+  z-index: 3;
   padding: 0.5rem 1rem;
 }
 .navbar-brand {
@@ -16,8 +16,8 @@
 }
 
 .navbar-brand img {
-  height: 60px;
-  margin-right: 10px;
+  height: 6rem;
+
 }
 
 .navbar-toggler {
@@ -27,7 +27,7 @@
 
 .container-fluid {
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
   width: 100%;
   padding-right: 12rem;
@@ -90,6 +90,6 @@
   }
 
   .navbar-nav {
-    justify-content: center;
+    
   }
 }

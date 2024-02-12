@@ -20,6 +20,7 @@ import {  HttpClientModule } from '@angular/common/http';
 import { FaqsComponent } from './faqs/faqs.component';
 import { FooterComponent } from './footer/footer.component';
 import { CardReversibleComponent } from './card-reversible/card-reversible.component';
+import { BodyComponent } from './body/body.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CardReversibleComponent } from './card-reversible/card-reversible.compo
     ContactoComponent,
     FaqsComponent,
     FooterComponent,
-    CardReversibleComponent
+    CardReversibleComponent,
+    BodyComponent
   ],
   imports: [
     BrowserModule,

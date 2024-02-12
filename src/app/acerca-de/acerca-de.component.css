@@ -23,10 +23,15 @@
   gap: 50px;
 }
 
+.acerca-de-texto{
+  padding: 0 1rem;
+}
+
 .acerca-de-texto p {
   font-size: 1.3em;
   margin-bottom: 30px;
   color: #333; /* Un color oscuro pero no tan pronunciado como el principal */
+
 }
 
 .acerca-de-texto p strong {
